@@ -31,8 +31,14 @@ The NMPC can provide the poweful and effective performance among existing optima
     ros-melodic-amcl
     ```
   
-4. Install Ipopt: Please refer the tutorial in ["document/ipopt_install"](https://github.com/Geonhee-LEE/mpc_ros/tree/melodic/assets/document/ipopt_install).  
-5. Create your own catkin_ws and clone the repositories.
+4. Install Ipopt: Please refer the tutorial in ["document/ipopt_install"](https://github.com/Geonhee-LEE/mpc_ros/tree/melodic/assets/document/ipopt_install).
+
+ipopt安装会出现问题：
+1.文件要在主目录下解压安装：/home
+2.Mumps和Metis地址无法下载，需要更改get.Mumps和get.Metis文件，并手动下载安装。
+
+  
+6. Create your own catkin_ws and clone the repositories.
     ```
     git clone https://github.com/Geonhee-LEE/mpc_ros.git 
     ```
@@ -43,7 +49,7 @@ The NMPC can provide the poweful and effective performance among existing optima
       
     > NOTE: you can also refer other models such as ackermann model, holonomic model. you can see it [mpc_ros_description](https://github.com/Geonhee-LEE/mpc_ros_description)
   
-6. Build (_catkin_make_) and Try it.
+7. Build (_catkin_make_) and Try it.
 
 
 ## Launch
